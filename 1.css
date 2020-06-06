@@ -1,0 +1,283 @@
+/* basic tags (not image related) */
+body{
+  margin:20px 60px 20px 60px;
+  background-color:#616048;
+  color:#000000;
+  font-family: "gill sans", arial, sans-serif;
+
+}
+p{
+  line-height: 24px;
+}
+a{
+  color:#f0efc7;
+}
+
+/* ORDINARY STATIC classes for img */
+.left-static{
+float: left;
+margin: 0 40px 40px 0;
+}
+
+.right-static{
+float: right;
+margin: 0 0 40px 40px;
+}
+
+/* RESPONSIVE classes for img */
+.left-responsive{
+    max-width:100%;
+    height: auto;
+  float:left;
+  margin: 0 40px 40px 0;
+  position: relative;
+}
+.mid{
+    max-width:100%;
+    height: auto;
+}
+
+.box{
+  box-sizing:border-box;
+  border: solid 15px #cccccc;
+  padding: 0;
+  float:center;
+  margin: 25px 25px 25px 0;
+  }
+
+.right-responsive{
+    max-width:100%;
+    height: auto;
+  float:right;
+  margin: 0 0 40px 40px;
+  position: relative;
+}
+
+/* BACKGROUND class (for the top div) */
+.bannerbackground{
+  width:100%;
+  height:400px;
+  background-image: url("images/hacklogo.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-color: #000000;
+  font-size:100px;
+  text-align: center;
+  line-height: 50px;
+  color:#f0efc7;
+  padding-top:30px;
+  box-sizing:border-box;
+}
+.menu{
+  float:left; 
+  margin-right: 50px;
+}
+.menu ul { /*the list gets styled, but only in the "container" div*/
+    list-style-type: none; /*removes bullets*/
+    margin: 0; /*removes any defaults*/
+    padding: 0; /*removes any defaults*/
+  width:120px;
+  height: 100%;
+  position: fixed;
+  top: 400px;
+  overflow: auto;
+}
+.menu li { /*the items gets styled, but only in the "container" too*/
+    padding: 8px; /*list items are getting treated as boxes*/
+    margin-bottom: 7px;
+    background-color :#33b5e5;
+    color: #ffffff;
+  box-shadow: 0 2px 5px 0 #1D2D49;
+  /*x (0 to the right), y (2 down), blur (5), spread (0), color (dk blue)*/
+} 
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+body {
+  margin: 0;
+  background: #FBFBFC;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 800;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background: #55d6aa;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+
+
+
+
+
+
+
+.bgimg {
+  background-image: url('images/hd.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: #000000;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
